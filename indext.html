@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thirsti South Africa</title>
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="vega">
+		<div class="tlogo"> <img src="images/tlogo.svg"></div>
+		<div class="navbar">
+			<ul>
+				<li><h1><a href="indext.html">Home</a></h1></li>
+				<li><h1><a href="our_story.html">Our Story</a></h1></li>
+				<li><h1><a href="products.html">Products</a></h1></li>
+				<li><h1><a href="gallery.html">Gallery</a></h1></li>
+				<li><h1><a href="contact-us.html">Contact Us</a></h1></li>
+			</ul>
+		</div>
+		<div class="banbot"> <img src="images/banbot-2-1.png"></div>
+		<div class="text"><h1> <span style="color:red;">#THIRSTI</span>africa</h1></div>
+		<a href="thirsti-africa.html"><div class="range"><h1>LEARN MORE  <span>></span></h1></div></a>
+	</div>
+	<div class="pbreak">
+		<div><h2>In stores now!</h2></div>
+		<div><h3><a href="contact-us.html">Stock Thirsti Water </a></h3></div>
+	</div>
+	<div class="middle_bit">
+		<div class="tban">
+		<!-- this plugin was originally recieved form www.jssor.com but has been modified and changed by Hugh Cunningham, inorder to suit the page needs --> 
+			<script src="js/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+		    <script src="js/js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+		        jQuery(document).ready(function ($) {
+		            
+		            var jssor_1_SlideshowTransitions = [
+		              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+		              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+		            ];
+		            
+		            var jssor_1_options = {
+		              $AutoPlay: true,
+		              $SlideshowOptions: {
+		                $Class: $JssorSlideshowRunner$,
+		                $Transitions: jssor_1_SlideshowTransitions,
+		                $TransitionsOrder: 1
+		              },
+		              $ArrowNavigatorOptions: {
+		                $Class: $JssorArrowNavigator$
+		              },
+		              $BulletNavigatorOptions: {
+		                $Class: $JssorBulletNavigator$
+		              },
+		              $ThumbnailNavigatorOptions: {
+		                $Class: $JssorThumbnailNavigator$,
+		                $Cols: 1,
+		                $Align: 0,
+		                $NoDrag: true
+		              }
+		            };
+		            
+		            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+		            
+		            //responsive code begin
+		            //you can remove responsive code if you don't want the slider scales while window resizing
+		            function ScaleSlider() {
+		                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+		                if (refSize) {
+		                    refSize = Math.min(refSize, 1000);
+		                    jssor_1_slider.$ScaleWidth(refSize);
+		                }
+		                else {
+		                    window.setTimeout(ScaleSlider, 30);
+		                }
+		            }
+		            ScaleSlider();
+		            $(window).bind("load", ScaleSlider);
+		            $(window).bind("resize", ScaleSlider);
+		            $(window).bind("orientationchange", ScaleSlider);
+		            //responsive code end
+		        });
+		        
+		    </script>
+		    <style>
+		        /* jssor slider bullet navigator skin 01 css */
+		        /*
+		        .jssorb01 div           (normal)
+		        .jssorb01 div:hover     (normal mouseover)
+		        .jssorb01 .av           (active)
+		        .jssorb01 .av:hover     (active mouseover)
+		        .jssorb01 .dn           (mousedown)
+		        */
+		        .jssorb01 {
+		            position: absolute;
+		        }
+		        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+		            position: absolute;
+		            /* size of bullet elment */
+		            width: 12px;
+		            height: 12px;
+		            filter: alpha(opacity=70);
+		            opacity: .7;
+		            overflow: hidden;
+		            cursor: pointer;
+		            border: #000 1px solid;
+		        }
+		        .jssorb01 div { background-color: gray; }
+		        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+		        .jssorb01 .av { background-color: #fff; }
+		        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+		        
+		        /* jssor slider arrow navigator skin 05 css */
+		        /*
+		        .jssora05l                  (normal)
+		        .jssora05r                  (normal)
+		        .jssora05l:hover            (normal mouseover)
+		        .jssora05r:hover            (normal mouseover)
+		        .jssora05l.jssora05ldn      (mousedown)
+		        .jssora05r.jssora05rdn      (mousedown)
+		        */
+		        .jssora05l, .jssora05r {
+		            display: block;
+		            position: absolute;
+		            /* size of arrow element */
+		            width: 40px;
+		            height: 40px;
+		            cursor: pointer;
+		            background: url('js/img/a18.png') no-repeat;
+		            overflow: hidden;
+		        }
+		        .jssora05l { background-position: -10px -40px; }
+		        .jssora05r { background-position: -70px -40px; }
+		        .jssora05l:hover { background-position: -130px -40px; }
+		        .jssora05r:hover { background-position: -190px -40px; }
+		        .jssora05l.jssora05ldn { background-position: -250px -40px; }
+		        .jssora05r.jssora05rdn { background-position: -310px -40px; }
+		        
+		        /* jssor slider thumbnail navigator skin 09 css */
+		        
+		        .jssort09-600-45 .p {
+		            position: absolute;
+		            top: 0;
+		            left: 0;
+		            width: 100%;
+		            height: 45px;
+		        }
+		        
+		        .jssort09-600-45 .t {
+		            font-family: verdana;
+		            font-weight: normal;
+		            position: absolute;
+		            width: 100%;
+		            height: 100%;
+		            top: 0;
+		            left: 0;
+		            color:#fff;
+		            line-height: 45px;
+		            font-size: 20px;
+		            padding-left: 10px;
+		        }
+		        
+		    </style>
+		    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1000px; height: 500px; overflow: hidden; visibility: hidden;">
+		        <!-- Loading Screen -->
+		        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+		            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+		          
+		        </div>
+		        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1000px; height: 500px; overflow: hidden;">
+		            <div data-p="112.50" style="display: none;">
+		                <a href="products.html"><img data-u="image" src="images/bot-slide-3.png" /></a>
+		                
+		            </div>
+		            <div data-p="112.50" style="display: none;">
+		                <img data-u="image" src="images/bot-slide-1.png" />
+		                
+		            </div>
+		            <div data-p="112.50" style="display: none;">
+		                <img data-u="image" src="images/bot-slide-2.png" />
+		              
+		            </div>
+		           
+		        
+		        </div>
+		        <!-- Thumbnail Navigator -->
+		        <div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:1000 px;height:45px;">
+		            <div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=40.0); opacity:0.4;"></div>
+		            <!-- Thumbnail Item Skin Begin -->
+		            <div data-u="slides" style="cursor: default;">
+		                <div data-u="prototype" class="p">
+		                    
+		                </div>
+		            </div>
+		            <!-- Thumbnail Item Skin End -->
+		        </div>
+		        <!-- Bullet Navigator -->
+		        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+		            <div data-u="prototype" style="width:12px;height:12px;"></div>
+		        </div>
+		        <!-- Arrow Navigator -->
+		        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
+		        <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+		    </div>
+		    <!-- #endregion Jssor Slider End -->
+		</div>
+				<div class="midbut"><a href="products.html"><h2>See Full product Range</h2></a></div>
+				<div class="tboxvid">
+				<video width="550" height="400" controls>
+					<source src="video/tboxvid.mp4" type="video/mp4">
+				</video>
+				</div>
+				<div class="mtext"><h1>OUR STORY</h1></div>
+		<div class="tstory">
+			<p style="font-family: 'roboto">Hello and welcome to the world of THIRSTI.
+
+We’re happy that you’ve felt intrigued enough to find out more about our special, natural spring water and hope that we can be united in a crisp, thirst quenching bond forever. In order for us to get to know each other a little better, its best that we start off by being completely open and honest. Because that’s just who we are.</p>
+		</div>
+		<a href="our_story.html"><div class="midbut2"><h2>READ MORE</h2></div></a>
+		
+	</div>
+	<div class="social">
+		<div class="fb"><a href="https://www.facebook.com/ThirstiWater"><img src="images/facebook.svg"> </a></div>
+		<div class="tw"><a href="https://twitter.com/thirstiwater"><img src="images/twitter.svg"></a></div>
+		<div class="in"> <a href="https://instagram.com/thirstiwater"><img src="images/instagram.svg"></a></div>
+	</div>
+	<div class="ban">
+		<div class="im1"><img src="images/africa.jpg"></div>
+		<div class="im2"><img src="images/emoji.png"></div>
+		<div class="im3"><img src="images/clock.jpg"></div>
+	</div>
+	<div class="landscape">
+		<div class="fullsize"><img src="images/fullsize-3.png"></div>
+	</div>
+	<div class="footer">
+		<div class="slogo"><img src="images/slogo.svg"></div>
+		<div class="about">
+			<h1>About us</h1>
+			<a href="our_story.html"><h2> Our Story</h2></a>
+			<a href="contact-us.html"><h2> Contact Us</h2></a>
+			<a href="thirsti-africa.html"><h2> Thirsti Africa</h2></a>
+		</div>
+		<div class="Products">
+			<h1>Products</h1>
+			<a href="http://thirsti.co.za/products/sparkling-500-ml"><h2>Sparkling Water</h2></a>
+			<a href="http://thirsti.co.za/products/still-500ml"><h2> Still Water</h2></a>
+			<a href="http://thirsti.co.za/products/still-kids-330ml"><h2> Kids Water</h2></a>
+		</div>
+		<div class="Social">
+			<h1>Social Media</h1>
+			<a href="https://www.facebook.com/ThirstiWater" target="_blank"><h2>Facebook</h2></a>
+			<a href="https://twitter.com/thirstiwater" target="_blank"><h2> Twitter</h2></a>
+			<a href="https://instagram.com/thirstiwater" target="_blank "><h2> Instagram</h2></a>
+		</div>
+	</div>
+</body>
+</html>
